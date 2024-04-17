@@ -22,7 +22,7 @@ const quick_updates = () => {
 
         while ((titleMatch = titleRegex.exec(html)) !== null && storyCount < 6) {
           const title = titleMatch[1].trim();
-          linkRegex.lastIndex = titleRegex.lastIndex; // Set the starting index for link search
+          linkRegex.lastIndex = titleRegex.lastIndex; 
           linkMatch = linkRegex.exec(html);
           if (linkMatch) {
             const link = linkMatch[1];
