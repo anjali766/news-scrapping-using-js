@@ -10,9 +10,9 @@ Apart form this, we can also run this script on the console of time website to g
 const stories = [];
 document.querySelectorAll('.latest-stories__item').forEach(storyElement => {
     const linkElement = storyElement.querySelector('a');
-    const titleElement = storyElement.querySelector('.latest-stories__item-headline');
+    const titleElement = storyElement.querySelector('.latest-stories__item-headline');   
     if (linkElement && titleElement) {
-        const link = linkElement.getAttribute('href').trim();
+        const link = linkElement.getAttribute('href').trim();   
         const title = titleElement.textContent.trim();
         stories.push({ "title": title, "link": link });
     }
